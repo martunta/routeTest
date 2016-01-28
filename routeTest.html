@@ -1,0 +1,48 @@
+<template name="hello">
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+</template>
+
+<template name="layout">
+  <head>
+    <title>routeTest</title>
+  </head>
+
+  <body>
+    <h1>Welcome to Meteor!</h1>
+
+    {{> yield}}
+  </body>
+</template>
+
+<template name="loading">
+  loading
+</template>
+
+<template name="dataNotFound">
+  data not found
+</template>
+
+<template name="signup">
+  signup
+</template>
+
+<template name="login">
+  login
+</template>
+
+<template name="recoverpassword">
+  recover password
+</template>
+
+<template name="resetpassword">
+  reset password
+</template>
+
+<template name="home">
+  home
+  <a href="/signup">signup</a>
+  <a href="/login">login</a>
+  <a href="/resetpassword">resetpassword</a>
+  <a href="/recoverpassword">recoverpassword</a>
+</template>
