@@ -1,3 +1,4 @@
+<!--
 <template name="hello">
   <button>Click Me</button>
   <p>You've pressed the button {{counter}} times.</p>
@@ -23,6 +24,8 @@
   data not found
 </template>
 
+-->
+
 <template name="signup">
   signup
 </template>
@@ -45,4 +48,38 @@
   <a href="/login">login</a>
   <a href="/resetpassword">resetpassword</a>
   <a href="/recoverpassword">recoverpassword</a>
+</template>
+
+
+
+
+<template name="layout">
+  {{> navigation}}
+  {{> yield}}
+  {{> footer}}
+</template>
+
+<head>
+  <title>Ecclesia.Life</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<body>
+  <!-- Dropdown menu script -->
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+</body>
+
+<template name="navigation">
+navigation
+<hr />
+</template>
+
+
+<template name="footer">
+    <footer class="footer footer-default">
+        <div class="container-fluid">
+            <hr />
+            <p class="text-muted">Copyright &copy; Ecclesia.Life, 2015.</p>
+        </div>
+    </footer>
 </template>
